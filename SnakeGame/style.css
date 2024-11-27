@@ -6,7 +6,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: linear-gradient(to bottom, #0D1117, #2c354d); /*블랙+네이비*/
+  background: linear-gradient(to bottom, #ace2ff, #ffffff); /*블랙+네이비*/
   color: white;
 }
 

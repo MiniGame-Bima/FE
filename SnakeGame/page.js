@@ -78,3 +78,9 @@ ticTacToeButton.addEventListener("click", () => openPopup("ticTacToePopup"));
 brickButton.addEventListener("click", () => openPopup("brickPopup"));
 zetButton.addEventListener("click", () => openPopup("zetPopup"));
 tetrisButton.addEventListener("click", () => openPopup("tetrisPopup"));
+
+const pyloopLogo = document.getElementById("pylooplogo");
+
+pyloopLogo.addEventListener("click", () => {
+  window.location.href = "index.html"; // 클릭 시 index.html로 이동
+});

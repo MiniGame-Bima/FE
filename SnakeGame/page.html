@@ -10,12 +10,15 @@
 <body>
     <!-- 로고 -->
     <div class="logo-container">
-        <img src="img/pyloop logo.png" alt="Logo" class="logo">
+        <!-- 로고 이미지를 클릭하면 index.html로 이동 -->
+        <a href="index.html">
+            <img src="img/pyloop logo.png" alt="Logo" class="logo">
+        </a>
     </div>
 
     <!-- 버튼들 -->
     <div class="button-container">
-        <a href="pyloop.html"> <!-- About Pyloop 버튼을 링크로 변경 -->
+        <a href="pyloop.html">
             <button class="action-button" id="pyloop">About Pyloop</button>
         </a>
         <button class="action-button" id="snakeButton">Snake Game</button>
@@ -30,7 +33,7 @@
         <div class="popup-content">
             <h2 id="popup-title"></h2>
             <p id="popup-description"></p>
-            <button class="close-popup" id="closePopup">Game Start!</button>
+            <button class="close-popup" id="closePopup">Close</button>
         </div>
     </div>
 

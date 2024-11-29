@@ -1,61 +1,37 @@
-/* Planet Kosmos 폰트 설정 */
+/* 폰트 설정 */
 @font-face {
-  font-family: 'PlanetKosmos'; /* 폰트 이름 설정 */
-  src: url('font/PLANK___.ttf') format('truetype'); /* 로컬 경로로 PlanetKosmos.ttf 지정 */
-  font-weight: normal;
-  font-style: normal;
+  font-family: 'PlanetKosmos';
+  src: url('font/PLANK___.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'SnakeChanFont';
+  src: url('font/SnakeChan-YdV8.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'RobotoMono';
+  src: url('font/RobotoMono-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Pacifico';
+  src: url('font/Pacifico-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Oswald';
+  src: url('font/Oswald-Regular.ttf') format('truetype');
 }
 
-/* 기본 스타일링 */
-@font-face {
-  font-family: 'SnakeChanFont'; /* SnakeChanFont 이름 설정 */
-  src: url('font/SnakeChan-YdV8.ttf') format('truetype'); /* SnakeChanFont 로컬 경로 */
-  font-weight: normal;
-  font-style: normal;
-}
-
-/* 폰트 적용 */
+/* 기본 스타일 */
 body {
   background: linear-gradient(to bottom, #b6dcff 0%, #b9b6e5 60%, #7571b8 100%);
-  font-family: 'SnakeChanFont', 'GowunBatang-Regular', Arial, sans-serif; /* SnakeChanFont 우선 사용 */
   margin: 0;
   padding: 0;
+  font-family: 'Arial', sans-serif;
   text-align: center;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
   flex-direction: column;
-}
-
-/* 'ZET GAME' 제목 스타일 */
-.zet-game {
-  font-family: 'PLANK___', sans-serif; /* PlanetKosmos 폰트 적용 */
-  font-size: 36px;
-  color: #ffffff;
-  margin-bottom: 20px;
-}
-
-/* 버튼 스타일에 폰트 적용 */
-.action-button {
-  font-family: 'SnakeChanFont', 'GowunBatang-Regular', Arial, sans-serif; /* 버튼에도 SnakeChanFont 적용 */
-  background-color: #4f4f9b;
-  color: white;
-  font-size: 16px;
-  padding: 15px 30px;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
-  outline: none;
-}
-
-.action-button:hover {
-  background-color: #3e3e7e;
-  box-shadow: 0 6px 12px rgba(255, 255, 255, 0.4);
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
 /* 로고 스타일 */
@@ -70,13 +46,59 @@ body {
   height: auto;
 }
 
-/* 버튼 컨테이너 */
+/* 버튼 컨테이너 스타일 */
 .button-container {
   display: grid;
   grid-template-columns: repeat(3, 200px);
   grid-gap: 20px;
   margin-top: 100px;
   justify-content: center;
+}
+
+/* 버튼 기본 스타일 */
+.action-button {
+  background-color: #4f4f9b;
+  color: white;
+  font-size: 16px;
+  padding: 15px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+  text-align: center;
+  box-sizing: border-box;
+  outline: none;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.action-button:hover {
+  background-color: #3e3e7e;
+  box-shadow: 0 6px 12px rgba(255, 255, 255, 0.4);
+}
+
+/* 버튼별 폰트 스타일 */
+.pyloop-button {
+  font-family: 'PlanetKosmos', sans-serif;
+}
+
+.snake-button {
+  font-family: 'SnakeChanFont', sans-serif;
+}
+
+.tictactoe-button {
+  font-family: 'RobotoMono', monospace;
+}
+
+.brick-button {
+  font-family: 'Pacifico', cursive;
+}
+
+.zet-button {
+  font-family: 'Oswald', sans-serif;
+}
+
+.tetris-button {
+  font-family: 'Arial', sans-serif;
 }
 
 /* 팝업 스타일 */
@@ -97,39 +119,30 @@ body {
   align-items: center;
 }
 
-/* 팝업 내 버튼 스타일 */
-.popup .action-button {
-  width: auto;
-}
-
-/* 팝업 내용 스타일 */
 .popup-content {
-  text-align: left;
+  text-align: center;
 }
 
-/* 숨김 처리 */
 .hidden {
   display: none;
 }
 
 /* 팝업 닫기 버튼 */
 .close-popup {
+  margin-top: 20px;
+  padding: 10px 20px;
   border: none;
-  text-align: center;
   background-color: #56a7d1;
   color: white;
-  padding: 12px 30px;
   border-radius: 8px;
   cursor: pointer;
-  margin-top: 20px;
-  margin-left: 180px;
 }
 
 .close-popup:hover {
   background-color: #218838;
 }
 
-/* 푸터 스타일 */
+/* 푸터 */
 .footer {
   position: fixed;
   bottom: 10px;

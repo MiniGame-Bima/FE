@@ -4,31 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Selection</title>
-    <link rel="icon" href="img/favicon2.png" type="img/png">
+    <link rel="icon" href="img/favicon2.png" type="image/png">
     <link rel="stylesheet" href="page.css">
 </head>
 <body>
     <!-- 로고 -->
     <div class="logo-container">
-        <!-- 로고 이미지를 클릭하면 index.html로 이동 -->
         <a href="index.html">
             <img src="img/pyloop logo.png" alt="Logo" class="logo">
         </a>
     </div>
 
-    <!-- 버튼들 -->
+    <!-- 버튼 컨테이너 -->
     <div class="button-container">
         <a href="pyloop.html">
-            <button class="action-button" id="pyloop">About Pyloop</button>
+            <button class="action-button pyloop-button">About Pyloop</button>
         </a>
-        <button class="action-button" id="snakeButton">Snake Game</button>
-        <button class="action-button" id="ticTacToeButton">Tic-Tac-Toe Game</button>
-        <button class="action-button" id="brickButton">Brick Game</button>
-        <button class="action-button" id="zetButton">Zet Game</button>
-        <button class="action-button" id="tetrisButton">Tetris Game</button>
+        <button class="action-button snake-button">Snake Game</button>
+        <button class="action-button tictactoe-button">Tic-Tac-Toe Game</button>
+        <button class="action-button brick-button">Brick Game</button>
+        <button class="action-button zet-button">Zet Game</button>
+        <button class="action-button tetris-button">Tetris Game</button>
     </div>
 
-    <!-- 게임 설명 팝업들 -->
+    <!-- 게임 설명 팝업 -->
     <div id="popup" class="popup hidden">
         <div class="popup-content">
             <h2 id="popup-title"></h2>
@@ -37,6 +36,7 @@
         </div>
     </div>
 
+    <!-- 푸터 -->
     <div class="footer">
         © 2024 PyLoop. All rights reserved.
     </div>

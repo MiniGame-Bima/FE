@@ -84,3 +84,18 @@ const pyloopLogo = document.getElementById("pylooplogo");
 pyloopLogo.addEventListener("click", () => {
   window.location.href = "index.html"; // 클릭 시 index.html로 이동
 });
+
+document.querySelectorAll('.action-button').forEach(button => {
+  button.addEventListener('click', () => {
+      const popup = document.getElementById('popup');
+      const title = button.textContent;
+      popup.classList.remove('hidden');
+      document.getElementById('popup-title').textContent = title;
+      document.getElementById('popup-description').textContent = `${title} description goes here.`;
+  });
+});
+
+document.getElementById('closePopup').addEventListener('click', () => {
+  const popup = document.getElementById('popup');
+  popup.classList.add('hidden');
+});

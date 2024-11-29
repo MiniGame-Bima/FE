@@ -1,23 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  
   <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Upheaval&display=swap" rel="stylesheet">  
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mini Game</title>
   <link rel="icon" href="img/favicon1.png" type="img/png">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- 배경 비디오 컨테이너 -->
+  <div class="video-container">
+    <video autoplay muted loop class="background-video">
+      <source src="video/bg.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <!-- 로고와 컨텐츠 
   <div class="logo-container">
     <img src="img/pyloop logo.png" alt="PyLoop Logo" class="logo">
   </div>
+  -->
+
+  <!-- Start 버튼 -->
   <div class="container">
-    <h1>Welcome to Mini Game</h1>
-    <button id="Snake">Snake Game</button>
-    <button id="tikButton">Tic-tac-toe Game</button>
-    <button id="EtcButton">Brick Game</button>
+    <button id="tikButton" class="tik-button">Start</button>
   </div>
+  
   <!-- 게임 설명 팝업 -->
   <div id="popup" class="hidden">
     <div class="popup-content">
@@ -26,9 +36,18 @@
       <button id="closePopup">Game Start!</button>
     </div>
   </div>
-  <script src="script.js"></script>
+  
+  <!-- Footer -->
   <div class="footer">
     © 2024 PyLoop. All rights reserved.
   </div>
+
+  <!-- JavaScript 파일 -->
+  <script>
+    // start 버튼 클릭 시 page.html로 이동
+    document.getElementById('tikButton').addEventListener('click', function() {
+        window.location.href = 'page.html'; // 페이지 이동
+    });
+  </script>
 </body>
 </html>

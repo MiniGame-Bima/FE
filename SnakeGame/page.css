@@ -78,7 +78,7 @@ body {
 
 /* 버튼별 폰트 스타일 */
 .pyloop-button {
-  font-family: 'PlanetKosmos', sans-serif;
+  font-family: 'PlanetKosmos', sans-serif; /* PlanetKosmos 폰트 적용 */
 }
 
 .snake-button {

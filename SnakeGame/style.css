@@ -7,12 +7,26 @@ body {
   align-items: center;
   height: 100vh;
   background: linear-gradient(to bottom, #ace2ff, #ffffff); /*블랙+네이비*/
-  color: white;
+  color: black;
 }
 
 .container {
   text-align: center;
 }
+
+/* 로고 컨테이너 스타일 */
+.logo-container {
+  position: absolute; /* 페이지의 좌측 상단에 고정 */
+  top: 10px;
+  left: 40px;
+}
+
+/* 로고 스타일 */
+.logo {
+  max-width: 140px; /* 로고 크기 조정 */
+  height: auto; /* 비율 유지 */
+}
+
 
 h1 {
   font-size: 2.5rem;

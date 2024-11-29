@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mini Game</title>
@@ -8,13 +9,15 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="logo-container">
+    <img src="img/pyloop logo.png" alt="PyLoop Logo" class="logo">
+  </div>
   <div class="container">
     <h1>Welcome to Mini Game</h1>
     <button id="Snake">Snake Game</button>
     <button id="tikButton">Tic-tac-toe Game</button>
     <button id="EtcButton">Brick Game</button>
   </div>
-
   <!-- 게임 설명 팝업 -->
   <div id="popup" class="hidden">
     <div class="popup-content">
@@ -23,9 +26,7 @@
       <button id="closePopup">Game Start!</button>
     </div>
   </div>
-
   <script src="script.js"></script>
-
   <div class="footer">
     © 2024 PyLoop. All rights reserved.
   </div>

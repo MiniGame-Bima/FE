@@ -42,8 +42,8 @@ const gameRules = {
     title: "Zet Game ✈️ ",
     description: `
       Zet Game에 오신 것을 환영합니다! <br>
-      1. 퍼즐을 맞추기 위해 다양한 전략을 사용해야 합니다.<br>
-      2. 각 레벨을 클리어하려면 주어진 시간 내에 퍼즐을 맞춰야 합니다!
+      1. 날아오는 전투기를 피합니다.<br>
+      2. 전투기에 3번 부딪히면 게임이 종료됩니다.
     `,
   },
   tetrisPopup: {

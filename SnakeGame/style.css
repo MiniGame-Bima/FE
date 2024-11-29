@@ -27,7 +27,7 @@ body {
 }
 
 /* Tik-tac-toe 버튼 스타일 */
-/* Tik-tac-toe 버튼 스타일 */
+
 .tik-button {
   display: block;
   position: absolute; /* 절대 위치 지정 */
@@ -44,7 +44,6 @@ body {
   transition: background-color 0.3s ease;
   font-family: 'Upheaval', sans-serif; /* 폰트 적용 */
 }
-
 
 .tik-button:hover {
   background-color: #280435;

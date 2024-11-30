@@ -86,3 +86,46 @@ document.addEventListener("DOMContentLoaded", () => {
     location.href = "pyloop.html"; // 바로 이동
   });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const popup = document.getElementById("popup");
+  const popupTitle = document.getElementById("popup-title");
+  const popupDescription = document.getElementById("popup-description");
+  const closePopup = document.getElementById("closePopup");
+
+  // 게임 버튼 이벤트
+  document.querySelectorAll(".action-button").forEach(button => {
+      button.addEventListener("click", () => {
+          const gameName = button.id.replace("Button", "").toLowerCase();
+          popupTitle.innerText = `${gameName.charAt(0).toUpperCase() + gameName.slice(1)} Game`;
+          popupDescription.innerText = `Click 'Game Start' to start the ${gameName} game.`;
+          popup.classList.remove("hidden");
+          closePopup.setAttribute("data-game", gameName);
+      });
+  });
+
+  // 팝업 닫기 및 게임 시작
+  closePopup.addEventListener("click", async () => {
+      const gameName = closePopup.getAttribute("data-game");
+
+      try {
+          const response = await fetch('http://127.0.0.1:5000/start-game', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ game: gameName })
+          });
+
+          const result = await response.json();
+          if (result.error) {
+              alert(result.error);
+          } else {
+              alert(result.status);
+          }
+      } catch (error) {
+          alert('Failed to start the game. Please check the server.');
+      } finally {
+          popup.classList.add("hidden");
+      }
+  });
+});
+

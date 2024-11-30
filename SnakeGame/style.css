@@ -1,4 +1,8 @@
 /* 전체 화면 스타일 */
+@font-face {
+  font-family: 'SnakeChanFont';
+  src: url('font/SnakeChan-YdV8.ttf') format('truetype');
+}
 body {
   margin: 0;
   padding: 0;
@@ -26,14 +30,29 @@ body {
   background-color: black; /* 비디오 비율로 인해 남는 영역을 채우기 위해 추가 */
 }
 
-/* Tik-tac-toe 버튼 스타일 */
 
+/* 네온 효과를 위한 애니메이션 */
+@keyframes neon-flicker {
+  0%, 100% {
+    box-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #a020f0, 0 0 30px #a020f0, 0 0 40px #a020f0, 0 0 50px #a020f0, 0 0 60px #a020f0;
+  }
+  50% {
+    box-shadow: 0 0 2px #ffffff, 0 0 8px #ffffff, 0 0 12px #800080, 0 0 20px #800080, 0 0 30px #800080, 0 0 40px #800080, 0 0 50px #800080;
+  }
+  70% {
+    box-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #9932cc, 0 0 25px #9932cc, 0 0 35px #9932cc, 0 0 45px #9932cc, 0 0 55px #9932cc;
+  }
+}
+
+
+/* 버튼 스타일 */
 .tik-button {
+  font-family: 'SnakeChanFont', sans-serif;
   display: block;
-  position: absolute; /* 절대 위치 지정 */
-  top: 30%; /* 화면 높이의 30%에 위치 (20%에서 30%로 수정) */
-  left: 50%; /* 화면 너비의 50%에 위치 */
-  transform: translate(-50%, 900%); /* 정중앙 맞춤 */
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, 1050%);
   padding: 10px 20px;
   font-size: 1.2rem;
   background-color: #573564;
@@ -41,8 +60,8 @@ body {
   border: none;
   border-radius: 50px;
   cursor: pointer;
+  animation: neon-flicker 1.5s infinite ease-in-out;
   transition: background-color 0.3s ease;
-  font-family: 'Upheaval', sans-serif; /* 폰트 적용 */
 }
 
 .tik-button:hover {
@@ -52,6 +71,7 @@ body {
 .tik-button:active {
   background-color: #220035;
 }
+
 
 /* 반응형 처리 */
 @media screen and (max-width: 768px) {

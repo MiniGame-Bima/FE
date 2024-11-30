@@ -93,16 +93,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const popupDescription = document.getElementById("popup-description");
   const closePopup = document.getElementById("closePopup");
 
-  // 게임 버튼 이벤트
-  document.querySelectorAll(".action-button").forEach(button => {
-      button.addEventListener("click", () => {
-          const gameName = button.id.replace("Button", "").toLowerCase();
-          popupTitle.innerText = `${gameName.charAt(0).toUpperCase() + gameName.slice(1)} Game`;
-          popupDescription.innerText = `Click 'Game Start' to start the ${gameName} game.`;
-          popup.classList.remove("hidden");
-          closePopup.setAttribute("data-game", gameName);
-      });
-  });
 
   // 팝업 닫기 및 게임 시작
   closePopup.addEventListener("click", async () => {

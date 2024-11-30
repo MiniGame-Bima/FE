@@ -1,5 +1,6 @@
 # FE
 파이루프
+![alt text](image.png)
 Mini Game (JE)
 1. Snake (SY, BA, HG)
 2. Tic-tae-toe (AH, HJ)

@@ -34,15 +34,16 @@ body {
 /* 네온 효과를 위한 애니메이션 */
 @keyframes neon-flicker {
   0%, 100% {
-    box-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080, 0 0 50px #ff0080, 0 0 60px #ff0080;
+    box-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #8000ff, 0 0 30px #8000ff, 0 0 40px #8000ff, 0 0 50px #8000ff, 0 0 60px #8000ff;
   }
   50% {
-    box-shadow: 0 0 2px #ffffff, 0 0 8px #ffffff, 0 0 12px #ff0080, 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080, 0 0 50px #ff0080;
+    box-shadow: 0 0 2px #ffffff, 0 0 8px #ffffff, 0 0 12px #8000ff, 0 0 20px #8000ff, 0 0 30px #8000ff, 0 0 40px #8000ff, 0 0 50px #8000ff;
   }
   70% {
-    box-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #ff0080, 0 0 25px #ff0080, 0 0 35px #ff0080, 0 0 45px #ff0080, 0 0 55px #ff0080;
+    box-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #8000ff, 0 0 25px #8000ff, 0 0 35px #8000ff, 0 0 45px #8000ff, 0 0 55px #8000ff;
   }
 }
+
 
 /* 버튼 스타일 */
 .tik-button {

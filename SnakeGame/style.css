@@ -11,6 +11,52 @@ body {
   color: white; /* 글자 색상 */
 }
 
+/* 로고 컨테이너 */
+.logo-container {
+  position: absolute;
+  top: 20%; /* 버튼 바로 위에 위치하도록 top 값을 설정 (30%에서 20%로 변경) */
+  left: 50%; /* 화면 가로 중앙 */
+  transform: translateX(-50%); /* 가로 중앙 정렬 */
+  z-index: 1; /* 로고가 다른 요소들 위에 오도록 */
+}
+
+.logo {
+  max-width: 140px;
+  height: auto;
+}
+
+/* 버튼 스타일 */
+.tik-button {
+  font-family: 'SnakeChanFont', sans-serif;
+  display: block;
+  position: absolute;
+  top: 30%; /* 화면 높이의 30%에 위치 */
+  left: 50%;
+  transform: translate(-50%, 1050%); /* 정중앙 맞춤 */
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: #573564;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  animation: neon-flicker 1.5s infinite ease-in-out;
+  transition: background-color 0.3s ease;
+}
+
+.tik-button:hover {
+  background-color: #280435;
+}
+
+.tik-button:active {
+  background-color: #220035;
+}
+
+
+
+
+
+
 /* 배경 비디오 스타일 */
 .video-container {
   position: fixed;
@@ -45,32 +91,6 @@ body {
 }
 
 
-/* 버튼 스타일 */
-.tik-button {
-  font-family: 'SnakeChanFont', sans-serif;
-  display: block;
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, 1050%);
-  padding: 10px 20px;
-  font-size: 1.2rem;
-  background-color: #573564;
-  color: white;
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  animation: neon-flicker 1.5s infinite ease-in-out;
-  transition: background-color 0.3s ease;
-}
-
-.tik-button:hover {
-  background-color: #280435;
-}
-
-.tik-button:active {
-  background-color: #220035;
-}
 
 
 /* 반응형 처리 */

@@ -1,9 +1,10 @@
 # FE
-파이루프
+About Pyloop
 ![alt text](image.png)
-Mini Game (JE)
-1. Snake (SY, BA, HG)
-2. Tic-tae-toe (AH, HJ)
-3. Brick (JE, JW)
-4. Tetris(SY)
-5. Zet(SY)
+
+Mini Game (JE)<br>
+1. Snake (SY, BA, HG)<br>
+2. Tic-tae-toe (AH, HJ)<br>
+3. Brick (JE, JW)<br>
+4. Tetris(SY)<br>
+5. Zet(SY)<br>

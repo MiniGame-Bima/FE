@@ -28,13 +28,14 @@ body {
 }
 
 /* 버튼 스타일 */
+/* 버튼 스타일 */
 .tik-button {
   font-family: 'DungGeunMo', sans-serif;
   display: block;
   position: absolute;
-  top: 100%; /* 화면 높이의 30%에 위치 */
+  top: 110%; /* 버튼의 높이를 더 아래로 조정 */
   left: 50%;
-  transform: translate(-50%, 1050%); /* 정중앙 맞춤 */
+  transform: translate(-50%, 1100%); /* 버튼의 위치를 더 아래로 */
   padding: 10px 20px;
   font-size: 1.2rem;
   background-color: #573564;

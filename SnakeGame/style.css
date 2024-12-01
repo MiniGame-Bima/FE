@@ -1,7 +1,9 @@
 /* 전체 화면 스타일 */
 @font-face {
-  font-family: 'SnakeChanFont';
-  src: url('font/SnakeChan-YdV8.ttf') format('truetype');
+  font-family: 'DungGeunMo';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 body {
   margin: 0;
@@ -27,10 +29,10 @@ body {
 
 /* 버튼 스타일 */
 .tik-button {
-  font-family: 'SnakeChanFont', sans-serif;
+  font-family: 'DungGeunMo', sans-serif;
   display: block;
   position: absolute;
-  top: 30%; /* 화면 높이의 30%에 위치 */
+  top: 100%; /* 화면 높이의 30%에 위치 */
   left: 50%;
   transform: translate(-50%, 1050%); /* 정중앙 맞춤 */
   padding: 10px 20px;
